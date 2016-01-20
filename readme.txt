@@ -10,33 +10,32 @@ Required Softwares:
 2) Login to the MySQL account and execute schema.sql located in the project's root directory. This file has the schema of the database.
 3) To package, run: 'mvn clean package'. This generates a war file in the target folder. The war file name is feedgenerator.war.
 4) Copy this file to the webapps directory in present in the Tomcat installation folder. Start the server.
-
 5) Check catalina.out for any errors.
-6) To check if the app is up, run: curl http://localhost:8080/feedgenerator/ping. This response should be "All is Well!" (Replace localhost with the host name of the machine where the application is required)
+6) To check if the app is up, run: curl http://localhost:8080/feedgenerator/ping. This response should be "All is Well!" (Replace localhost with the host name of the machine where the application is deployed)
 
-REST APIs;
+REST APIs:
 
 There are three main resources in this webapp: Users, Topics, UserRoles. The REST APIs for all the resources follow the same convention. Below are the only things that you need to remember when using the APIs. (The structure of the request and reponse for each endpoint is different, obviously).
 
 Operation: INSERT/CREATE
 HTTP verb: POST
-Resource endpoint: <BASEURI>/users,<BASEURI>/userroles, <BASEURI>/topics
+Resource endpoints: <BASEURI>/users,<BASEURI>/userroles, <BASEURI>/topics
 
 Operation: UPDATE
 HTTP verb: PUT 
-Resource endpoint: <BASEURI>/users,<BASEURI>/userroles, <BASEURI>/topics
+Resource endpoints: <BASEURI>/users,<BASEURI>/userroles, <BASEURI>/topics
  
 Operation: DELETE
 HTTP verb: DELETE
-Resource endpoint: <BASEURI>/users/{id}, <BASEURI>/userroles/{id}, <BASEURI>/topics/{id}
+Resource endpoints: <BASEURI>/users/{id}, <BASEURI>/userroles/{id}, <BASEURI>/topics/{id}
 
 Operation: GET
 HTTP verb: GET
-Resource endpoint: <BASEURI>/users/{id}, <BASEURI>/userroles/{id}, <BASEURI>/topics/{id}
+Resource endpoints: <BASEURI>/users/{id}, <BASEURI>/userroles/{id}, <BASEURI>/topics/{id}
 
 Operation: GETALL
 HTTP verb: GET
-Resource endpoint: <BASEURI>/users, <BASEURI>/userroles, <BASEURI>/topics
+Resource endpoints: <BASEURI>/users, <BASEURI>/userroles, <BASEURI>/topics
 
 
 JSON Structures:
